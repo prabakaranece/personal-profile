@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prabakaran's Professional Portfolio - Software Developer">
+    <title>Prabakaran's Professional Portfolio</title>
+    <style>
+        /* Base styles */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --text-color: #333;
+            --light-bg: #f5f6fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+        }
+
+        nav {
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Sections */
+        section {
+            padding: 4rem 0;
+        }
+
+        section:nth-child(even) {
+            background: var(--light-bg);
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        /* Projects */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Contact */
+        .contact-info {
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Prabakaran's Professional Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>I am an Engineering Manager at Travelers Insurance with over 15 years of experience in software development and team leadership. I specialize in cloud transformation, microservices architecture, and application modernization. I have a proven track record of delivering complex enterprise projects, driving innovation, and implementing cost-effective solutions that have saved millions in licensing costs.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div>
+                        <h3>Cloud & DevOps</h3>
+                        <ul>
+                            <li>AWS (Certified Solutions Architect)</li>
+                            <li>Kubernetes, PCF, OpenShift</li>
+                            <li>Terraform, DevOps, SRE</li>
+                            <li>Jenkins, Urban Code, CI/CD</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Languages & Frameworks</h3>
+                        <ul>
+                            <li>Java, Spring Boot, Microservices</li>
+                            <li>NodeJS, Python, R</li>
+                            <li>C#, .NET Core, ASP.NET</li>
+                            <li>React, Angular, TypeScript</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Data & Integration</h3>
+                        <ul>
+                            <li>Hadoop, Spark, HDFS, Hive</li>
+                            <li>Kafka, Redis, IBM MQ</li>
+                            <li>MongoDB, Oracle, SQL Server</li>
+                            <li>Machine Learning, Analytics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <div class="container">
+                <h2>Professional Experience</h2>
+                <div class="experience-item">
+                    <h3>Engineering Manager</h3>
+                    <p><strong>Travelers Insurance (Cognizant)</strong> | Jan 2021 - Present</p>
+                    <ul>
+                        <li>Saved $2M in license costs by implementing open source NodeJS rules engine and migrating 100K+ rules from IBM ODM</li>
+                        <li>Automated failure detection using Python scripting, saving 15 hours/week with zero critical defects</li>
+                        <li>Migrated 30+ APIs to AWS EKS, IBM OCP and serverless applications</li>
+                        <li>Implemented Hadoop technology stack including Pig Latin, Hive, HBase, Sqoop</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>SME/Solution Architect</h3>
+                    <p><strong>Travelers Insurance</strong> | Jan 2018 - Dec 2020</p>
+                    <ul>
+                        <li>Reduced MTTR to less than 1 hour for 95% of outages using SRE principles</li>
+                        <li>Improved speed to market by 30% through fast path framework implementation</li>
+                        <li>Created enterprise-level BPM knowledge repository used by 300+ team members</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <h3>Cloud Migration & Modernization</h3>
+                        <p>Led the transformation of monolithic applications to microservices architecture. Implemented Cloud Native Applications using Spring Boot and NodeJS. Successfully migrated 30+ APIs to public cloud platforms including AWS EKS and IBM OCP.</p>
+                    </article>
+                    <article class="project-card">
+                        <h3>Rules Engine Optimization</h3>
+                        <p>Spearheaded the migration from IBM ODM to open source NodeJS rules engine, managing the transition of over 100,000 business rules. Achieved $2M cost savings in licensing while maintaining system integrity.</p>
+                    </article>
+                    <article class="project-card">
+                        <h3>DevOps & SRE Implementation</h3>
+                        <p>Established robust DevOps practices and SRE principles, resulting in reduced MTTR and 85% reduction in open incidents. Implemented automated failure detection and monitoring systems.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <div class="contact-info">
+                    <p>
+                        <a href="https://www.linkedin.com/in/prabakaransunderaraju/" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           style="color: var(--secondary-color); text-decoration: none;">
+                            LinkedIn: Prabakaran Sundera Raju
+                        </a>
+                    </p>
+                    <p>Location: Baltimore, MD</p>
+                    <p>Education: Bachelor of Engineering, Anna University</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Prabakaran. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 
